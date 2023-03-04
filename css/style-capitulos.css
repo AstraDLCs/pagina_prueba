@@ -80,13 +80,13 @@ p {
 .header {
     height: 600px !important;
     width: 400px;
-    background: url(img/.jpeg) no-repeat center;
+    background: url(../img/.jpeg) no-repeat center;
     background-size: cover;
 }
 .box-container .box {
     height: 40rem;
     width:  18rem;
-    background: url(img/temp4.jpeg) no-repeat center;
+    background: url(../img/temp4.jpeg) no-repeat center;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
