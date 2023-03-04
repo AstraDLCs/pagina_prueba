@@ -82,16 +82,17 @@ p {
     width: 400px;
     background: url(../img/.jpeg) no-repeat center;
     background-size: cover;
+    align-items: center;
 }
 .box-container .box {
     height: 40rem;
-    width:  18rem;
     background: url(../img/temp4.jpeg) no-repeat center;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;   
 }
+
 @media (max-width: 768px) {
 
     .title {
