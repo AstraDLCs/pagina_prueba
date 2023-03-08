@@ -16,39 +16,61 @@
         <div class="logo">
             <figure class="logo1">
             <a href="index.html"><img src="img/logo.png" height="130px" width="100%" alt="mapa" alt="Logo1"></a>
-        </figure>
-        
-    </div>
+            </figure>
+        </div>
   
         <nav class="navbar">
             <a href="index.html">Inicio</a>
             <a href="#">Contacto</a>
             <a href="#">Aporte</a>
-            <a href="index3.html">Proximamente</a>
-            
-        </nav>
-   
-        
+            <a href="index3.html">Proximamente</a> 
+        </nav>  
     </div>
-    
         <br><br><br><br>
-    
-    </header>
-        <div class="box-container">
-            <div class="box">
-                <h2 class="title">Scissor Seven Temporada 4</h2>       
-        <header class="content header"> </header> 
-        <p> Scissor Seven Temporada 4 se está lanzando actualmente en bilibili. Según Aha Entertainment, a 
+    <div class="contenedorP">
+        <h1 class="titulos">TEMPORADA 4</h1>
+        <div><img class= "portadas"src="img/temp4.jpeg" alt=""></div>
+    </div>
+    <div>
+        <p>Scissor Seven Temporada 4 se está lanzando actualmente en bilibili. Según Aha Entertainment, a 
             partir del 18 de enero de 2023, se lanzará un episodio cada miércoles. Los primeros cuatro episodios
-             ya se han publicado en el sitio web, pero solo están disponibles para personas en China. Espere que 
-             la temporada 4 esté en Neflix a mediados de 2023.</p> 
-            </div>
-            </div>
-            <section class="capitulos">
-                <h1>Capitulo 4</h1>
-                <h1>Capitulo 3</h1>
-                <h1>Capitulo 2</h1>
-                <h1>Capitulo 1</h1>
-        </body>
+            ya se han publicado en el sitio web, pero solo están disponibles para personas en China. Espere que 
+            la temporada 4 esté en Neflix a mediados de 2023.</p>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <button onclick="cambiarVideo('src/Seven-Scisors/t4/t4e1.mp4')" class="cbtn">CAPITULO 1</button>
+                <button onclick="cambiarVideo('src/Seven-Scisors/t4/t4e2.mp4')" class="cbtn">CAPITULO 2</button>
+                <button onclick="cambiarVideo('src/Seven-Scisors/t4/t4e3.mp4')" class="cbtn">CAPITULO 2</button>
+                <button onclick="cambiarVideo('src/Seven-Scisors/t4/t4e4.mp4')" class="cbtn">CAPITULO 4</button>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <video id="miVideo" controls>
+            <source src="src/Seven-Scisors/t4/t4e1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <script>
+            function cambiarVideo(src) {
+                var footer = document.getElementById("footer");
+                var video = document.getElementById("miVideo");
+                footer.style.display = "block";
+                footer.background = "black";
+                video.style.display = "inline-block";
+                video.src = src;
+                video.load();
+                video.play();
+            }
+          </script>
+    </div>
+    <div>
+        <p id="footer">Scissor Seven Temporada 4 se está lanzando actualmente en bilibili. Según Aha Entertainment, a 
+            partir del 18 de enero de 2023, se lanzará un episodio cada miércoles. Los primeros cuatro episodios
+            ya se han publicado en el sitio web, pero solo están disponibles para personas en China. Espere que 
+            la temporada 4 esté en Neflix a mediados de 2023.</p><br><br>
+    </div>
+</body>
     
 </html>
